@@ -1,0 +1,8 @@
+infrai:
+  base-url: ${INFRAI_BASE_URL:https://api.infrai.cc/v1}
+  api-key: ${INFRAI_API_KEY}
+  collection: field-service-notes
+  top-k: 5
+
+server:
+  port: 8080

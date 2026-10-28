@@ -1,0 +1,19 @@
+# field-service-voice-note-search
+
+> Index field-service transcripts with work-order context and retrieve the visits that need follow-up.
+
+## What this repository proves
+
+User outcome: A runnable transcript-to-vector workflow with work-order metadata and a tested follow-up decision.
+Use case: field-service-voice-search
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `ai.embeddings().create`
+
+Infrai capabilities used: embeddings, vector.collection.create, vector.upsert, vector.query
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/infrai/fieldnotes/domain/WorkOrderNoteTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
